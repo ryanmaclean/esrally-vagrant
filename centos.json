@@ -83,7 +83,7 @@
   ],
   "post-processors": [
     {
-      "output": "builds/{{.Provider}}-centos7.box",
+      "output": "builds/{{.Provider}}-esrally-centos7.box",
       "type": "vagrant"
     }
   ]
