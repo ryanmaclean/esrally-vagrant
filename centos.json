@@ -8,7 +8,7 @@
         "git.sh",
         "java.sh"
       ],
-      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}/scripts/'"
+      "echo 'packer' | sudo -S sh -c '{{ .Vars }}' /scripts/'{{ .Path }}'"
     }
   ],
   "builders": [
