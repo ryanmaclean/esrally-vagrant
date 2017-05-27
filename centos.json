@@ -8,7 +8,7 @@
         "scripts/git.sh",
         "scripts/java.sh"
       ],
-      "echo 'packer' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'"
+      "execute_command": "echo 'packer' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'"
     }
   ],
   "builders": [
