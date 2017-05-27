@@ -3,10 +3,10 @@
     {
       "type": "shell",
       "scripts": [
-        "python.sh",
-        "gradle.sh",
-        "git.sh",
-        "java.sh"
+        "/scripts/python.sh",
+        "/scripts/gradle.sh",
+        "/scripts/git.sh",
+        "/scripts/java.sh"
       ],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'"
     }
