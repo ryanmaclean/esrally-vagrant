@@ -3,12 +3,12 @@
     {
       "type": "shell",
       "scripts": [
-        "python.sh",
-        "gradle.sh",
-        "git.sh",
-        "java.sh"
+        "scripts/python.sh",
+        "scripts/gradle.sh",
+        "scripts/git.sh",
+        "scripts/java.sh"
       ],
-      "echo 'packer' | sudo -S sh -c '{{ .Vars }} /scripts/{{ .Path }}'"
+      "echo 'packer' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'"
     }
   ],
   "builders": [
